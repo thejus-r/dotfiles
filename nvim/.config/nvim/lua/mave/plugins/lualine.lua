@@ -1,4 +1,5 @@
-return { 'nvim-lualine/lualine.nvim',
+return {
+  'nvim-lualine/lualine.nvim',
   dependencies = {
     'nvim-tree/nvim-web-devicons',
     'SmiteshP/nvim-navic'
@@ -9,22 +10,22 @@ return { 'nvim-lualine/lualine.nvim',
     lualine.setup({
       options = {
         icons_enabled = true,
-        theme = 'catppuccin',
+        theme = 'rose-pine',
         component_separators = '',
         section_separators = { left = '', right = '' },
       },
       sections = {
-        lualine_a = {'mode'},
-        lualine_b = {'branch', 'diff', 'diagnostics'},
-        lualine_c = {'hello there'},
-        lualine_x = {'filetype'},
-        lualine_y = {'progress'},
-        lualine_z = {'location'},
+        lualine_a = { 'mode' },
+        lualine_b = { 'branch', 'diff', 'diagnostics' },
+        lualine_c = { 'hello there' },
+        lualine_x = { 'filetype' },
+        lualine_y = { 'progress' },
+        lualine_z = { 'location' },
       },
       inactive_sections = {
         lualine_a = {},
         lualine_b = {},
-        lualine_c = {'filename'},
+        lualine_c = { 'filename' },
         lualine_x = {},
         lualine_y = {},
         lualine_z = {}
@@ -41,6 +42,9 @@ return { 'nvim-lualine/lualine.nvim',
             end
           },
         },
+      },
+      inactive_winbar = {
+        lualine_b = { "filename" },
       }
     })
   end,

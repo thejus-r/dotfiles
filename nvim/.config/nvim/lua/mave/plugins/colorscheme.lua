@@ -1,18 +1,14 @@
 return {
-  "catppuccin/nvim",
-  lazy = false,
-  priority = 1000,
-
+  "rose-pine/neovim",
+  name = "rose-pine",
   config = function()
-
-    local catppuccin = require("catppuccin")
-
-    ---@class tokyonight.Config
-    catppuccin.setup({
-      flavor = "mocha",
-      transparent_background = true,
+    local theme = require('rose-pine')
+    theme.setup({
+      dim_inactive_windows = false,
+      styles = {
+        transparency = true
+      }
     })
-
-    vim.cmd[[colorscheme catppuccin]]
-  end,
+    vim.cmd("colorscheme rose-pine")
+  end
 }

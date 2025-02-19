@@ -15,6 +15,10 @@ opt.autoindent = true
 
 opt.backspace = "indent,eol,start"
 
+opt.wrap = false
+opt.clipboard = "unnamedplus"
+opt.scrolloff = 10
+
 opt.splitright = true
 opt.splitbelow = true
 
