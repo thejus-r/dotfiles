@@ -10,9 +10,9 @@ return {
     lualine.setup({
       options = {
         icons_enabled = true,
-        theme = 'rose-pine',
+        theme = "catppuccin",
         component_separators = '',
-        section_separators = { left = '', right = '' },
+        section_separators = { left = '', right = '' },
       },
       sections = {
         lualine_a = { 'mode' },
@@ -31,8 +31,7 @@ return {
         lualine_z = {}
       },
       winbar = {
-        lualine_b = { "filename" },
-        lualine_c = {
+        lualine_c = { 'filename',
           {
             function()
               return navic.get_location()
@@ -44,7 +43,7 @@ return {
         },
       },
       inactive_winbar = {
-        lualine_b = { "filename" },
+        lualine_c = { "filename" },
       }
     })
   end,

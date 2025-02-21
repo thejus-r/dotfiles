@@ -1,0 +1,19 @@
+format = """
+$directory\
+$git_branch\
+$git_status\
+$fill\
+$golang\
+$time\
+$line_break\
+$character"""
+
+[fill]
+symbol = ' '
+
+[time]
+disabled = false
+format = '🕙[\[ $time \]]($style) '
+time_format = '%l:%M %p, %e %b'
+utc_time_offset = 'local'
+time_range = '10:00:00-14:00:00'

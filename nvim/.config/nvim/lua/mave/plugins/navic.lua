@@ -1,7 +1,7 @@
 return {
   "SmiteshP/nvim-navic",
 
-  init = function ()
+  init = function()
     local navic = require("nvim-navic")
     navic.setup({
       icons = {
@@ -32,6 +32,10 @@ return {
         Operator = ' ',
         TypeParameter = ' '
       },
+
+      depth_limit = 5,
+      depth_limit_indicator = "..",
+      lazy_update_context = false,
       highlight = true,
       separator = " ",
       click = true

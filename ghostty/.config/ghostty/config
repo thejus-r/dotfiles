@@ -1,9 +1,9 @@
 # Font
-font-family = "SFMono Nerd Font"
+font-family = "CaskaydiaCove Nerd Font"
 font-size = 16
 
 # Theme
-theme = "rose-pine"
+theme = "catppuccin-mocha"
 
 # Window Padding
 window-padding-x = 4
@@ -13,7 +13,7 @@ window-padding-color = "extend"
 window-colorspace = "display-p3"
 
 # Background
-background-opacity = 0.85
+background-opacity = 0.9
 background-blur = 255
 
 # Title bar
